@@ -1,0 +1,58 @@
+﻿@model SchoolManagementSystem.Models.Instructor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row" style="margin-bottom:5px;">
+    <div class="col-lg-12">
+        <h1 class="page-header">Instructor Details</h1>
+
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OfficeAssignment.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeAssignment.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HireDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-success" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })
+</p>
+
